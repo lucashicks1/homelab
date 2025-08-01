@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: cssebot
+  name: cssebot-service
+  labels:
+    app: cssebot
+spec:
+  type: ClusterIP
+  selector:
+    app: cssebot
+  # ports:
+  #   - protocol: TCP
+  #     name: http
+  #     port: 80
+  #     targetPort: 5000

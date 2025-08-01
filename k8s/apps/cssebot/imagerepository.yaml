@@ -1,0 +1,8 @@
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: cssebot
+  namespace: cssebot
+spec:
+  image: ghcr.io/lucashicks1/csse3200bot
+  interval: 1m0s

@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cssebot
+  labels:
+    app: cssebot
+  namespace: cssebot
+spec:
+  selector:
+    matchLabels:
+      app: cssebot
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: cssebot
+    spec:
+      containers:
+      - name: cssebot
+        image: ghcr.io/lucashicks1/csse3200bot:main-a0611d66-1754008595 # {"$imagepolicy": "default:cssebot"}
+        volumeMounts:
+        - name: config-volume
+          mountPath: /configs/
+      volumes:
+      - name: config-volume
+        configMap:
+          name: cssebot
