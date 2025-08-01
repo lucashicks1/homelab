@@ -4,4 +4,4 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 - ../../../apps/cssebot/kustomization.yaml
-- ../../../infrastructure/kustomization.yaml
+- ../../../infrastructure/bitwarden/kustomization.yaml
