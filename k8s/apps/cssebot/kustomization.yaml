@@ -4,3 +4,4 @@ resources:
   - image.yaml
   - deployment.yaml
   - service.yaml
+  - secrets.yaml
