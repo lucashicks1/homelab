@@ -47,5 +47,5 @@ spec:
     name: cssebot
   policy:
     numerical:
-      order: desc
+      order: asc
 ---
