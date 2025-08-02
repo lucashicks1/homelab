@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: cssebot
-        image: ghcr.io/lucashicks1/cssebot:main-a0611d66-1754008595 # {"$imagepolicy": "cssebot:cssebot"}
+        image: ghcr.io/lucashicks1/cssebot:main-a0611d66-1754014112 # {"$imagepolicy": "cssebot:cssebot"}
         env:
         - name: DB_URL
           valueFrom:
@@ -41,4 +41,3 @@ spec:
               key: discord_token
         - name: GUILD_IDS
           value: "[1398834247338299442,1393034196079083711,1393034498144206888,1393034751199281232,1393035006401839235]"
-        
