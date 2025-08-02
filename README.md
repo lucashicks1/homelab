@@ -17,6 +17,7 @@ flux bootstrap github \
   --token-auth=false \
   --owner=lucashicks1 \
   --repository=homelab \
+  --read-write-key \
   --path=k8s/clusters/dev \
   --personal \
   --components-extra=image-reflector-controller,image-automation-controller \
@@ -24,5 +25,5 @@ flux bootstrap github \
   ```
 - Create a bitwarden secret for bitwarden to use
 ```
-kubectl create secret generic bw-auth-token -n <YOUR_NAMESPACE> --from-literal=token="<TOKEN_HERE>"
+kubectl create secret generic bw-auth-token -n <NAMESPACE> --from-literal=token="<SECRET>"
 ```
