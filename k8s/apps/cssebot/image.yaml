@@ -5,7 +5,7 @@ metadata:
   name: cssebot
   namespace: cssebot
 spec:
-  image: ghcr.io/lucashicks1/csse3200bot
+  image: ghcr.io/lucashicks1/cssebot
   interval: 1m0s
 ---
 apiVersion: image.toolkit.fluxcd.io/v1beta1
