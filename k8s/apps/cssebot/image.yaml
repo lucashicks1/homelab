@@ -3,7 +3,7 @@ apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImageRepository
 metadata:
   name: cssebot
-  namespace: cssebot
+  namespace: flux-system
 spec:
   image: ghcr.io/lucashicks1/cssebot
   interval: 1m0s
@@ -12,7 +12,7 @@ apiVersion: image.toolkit.fluxcd.io/v1beta1
 kind: ImageUpdateAutomation
 metadata:
   name: cssebot
-  namespace: cssebot
+  namespace: flux-system
 spec:
   interval: 1m0s
   sourceRef:
@@ -38,7 +38,7 @@ apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImagePolicy
 metadata:
   name: cssebot
-  namespace: cssebot
+  namespace: flux-system
 spec:
   filterTags:
     pattern: '^main-[a-fA-F0-9]+-(?P<ts>.*)'
