@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: cssebot
-        image: ghcr.io/lucashicks1/cssebot:main-2142ffa8-1754528931 # {"$imagepolicy": "flux-system:cssebot"}
+        image: ghcr.io/lucashicks1/cssebot:main-97f69ac7-1757746185 # {"$imagepolicy": "flux-system:cssebot"}
         env:
         - name: DB_URL
           valueFrom:
